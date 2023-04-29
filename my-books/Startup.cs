@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using my_books.Data;
+using my_books.Data.Services;
 
 namespace my_books
 {
@@ -36,6 +37,9 @@ namespace my_books
             //Configure DbContext with SQL
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
 
+
+            // ///////////Configure sevices
+            services.AddTransient<BooksServices>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "my_books", Version = "v1" });
