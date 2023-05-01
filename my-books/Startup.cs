@@ -40,6 +40,8 @@ namespace my_books
 
             // ///////////Configure sevices
             services.AddTransient<BooksServices>();
+            services.AddTransient<AuthorService>();
+            services.AddTransient<PublisherService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "my_books", Version = "v1" });
@@ -68,7 +70,7 @@ namespace my_books
             });
 
             //Initialisation de l'application
-            AppDbInitializer.seed(app);
+           // AppDbInitializer.seed(app);
         }
     }
 }
