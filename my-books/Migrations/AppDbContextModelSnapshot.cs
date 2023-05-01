@@ -99,7 +99,7 @@ namespace my_books.Migrations
 
             modelBuilder.Entity("my_books.Data.Models.Publisher", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("PublisherId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -107,7 +107,7 @@ namespace my_books.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("PublisherId");
 
                     b.ToTable("Publishers");
                 });

@@ -39,10 +39,10 @@ namespace my_books.Data.Services
                 var _book_author = new Book_Author()
                 {
                     BookId = _book.Id,
-                    AuthorId = _book.Id
+                    AuthorId = id
                 };
                 _context.Book_Authors.Add(_book_author);
-                _context.SaveChanges();
+               _context.SaveChanges();
             }
         }
 
