@@ -26,7 +26,7 @@ namespace my_books.Data
                         DateRead = DateTime.Now.AddDays(-10),
                         Rate = 5,
                         Genre = "Masculin",
-                        Author = "Jean Elie",
+                      //  Author = "Jean Elie",
                         CoverUrl = "https ......",
                         DateAdded = DateTime.Now
                         },
@@ -38,7 +38,7 @@ namespace my_books.Data
                         DateRead = DateTime.Now.AddDays(-9),
                         Rate = 5,
                         Genre = "Femiin",
-                        Author = "Jean Elie",
+                       // Author = "Jean Elie",
                         CoverUrl = "https ......",
                         DateAdded = DateTime.Now
 
